@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Medical Hall - Nepal</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 80%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Forms */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form select, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45A049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Responsive Design for Laptop */
+        @media (min-width: 1025px) {
+            section {
+                width: 80%;
+            }
+        }
+
+        /* Responsive Design for Tablets */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            section {
+                width: 90%;
+                margin: 15px auto;
+            }
+
+            .gallery img {
+                width: 120px;
+                height: 80px;
+            }
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 767px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                width: 95%;
+            }
+
+            header {
+                text-align: left;
+                padding: 15px;
+            }
+
+            .gallery img {
+                width: 100px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akash Medical Hall</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctor">Our Doctor</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sections -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Akash Medical Hall, where we care for your health with dedication and expert solutions!</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Prescription Filling</li>
+                <li>Over-the-Counter Medications</li>
+                <li>Health Consultations</li>
+                <li>Immunizations</li>
+                <li>Emergency Care</li>
+            </ul>
+        </section>
+
+        <section id="doctor">
+            <h2>Meet Our Doctor</h2>
+            <p>Dr. Tarannum Khatun is an experienced and trusted gynecologist, available for consultations!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Akash Medical Hall - Nepal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
