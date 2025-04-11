@@ -153,6 +153,8 @@
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials(Feedback)</a></li>
                 <li><a href="#doctor">Our Doctor</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -160,10 +162,26 @@
     </header>
 
     <main>
+        <section id="home">
+            <h2>Welcome to Akash Medical Hall</h2>
+            <p>Your trusted partner in health and wellness, offering personalized care and expert guidance and giving services from last 50 years without any complain.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </section>
         <!-- Sections -->
         <section id="about">
             <h2>About Us</h2>
-            <p>Welcome to Akash Medical Hall, where we care for your health with dedication and expert solutions!</p>
+            <p>At Akash Medical Hall, we take pride in serving our community with trusted healthcare solutions for over 50 years. As a cornerstone of health and wellness in the region, we have built a legacy of care, reliability, and commitment that spans generations.
+               With a fully stocked pharmacy and access to a certified medical professional on-site, we strive to meet the diverse healthcare needs of our customers. Our mission is to deliver:
+               Authentic Medications: A wide inventory of trusted, high-quality medicines to support your health.
+               Expert Guidance: Personalized consultations and advice from our experienced medical professional.
+               Holistic Healthcare Solutions: Comprehensive services aimed at promoting overall wellness.
+               For more than half a century, Akash Medical Hall has been a trusted partner in the community's journey toward better health. We are dedicated to continuing this tradition of excellence for years to come. Your health and well-being remain our top priorities.</p>
+            <p><strong>Owned and Managed By:</strong></p>
+            <ul>
+                <li>Mr.Aftab Alam Ansari - Contact: +977-9804267816 , +977-9845413826</li>
+                <li>Mr.Tauqeer Alam      - Contact: +977-9821127921</li>
+            </ul>
+            <p><strong>Shop Landline:</strong> 051-526427</p>
         </section>
 
         <section id="services">
@@ -174,16 +192,89 @@
                 <li>Health Consultations</li>
                 <li>Immunizations</li>
                 <li>Emergency Care</li>
+                <li>Online Medicine Orders</li>
+                <li>Appointment Booking</li>
             </ul>
         </section>
 
         <section id="doctor">
             <h2>Meet Our Doctor</h2>
-            <p>Dr. Tarannum Khatun is an experienced and trusted gynecologist, available for consultations!</p>
+            <p>We are privileged to introduce Dr. Tarannum Khatun, Nepal's No.1 gynecologist and a distinguished Gold Medalist. With over 20 years of extensive experience, Dr.Tarannum Khatun is renowned for her expertise in treating all types of female health conditions and her compassionate approach to patient care.
+               Having completed her MBBS from Pakistan, Dr.Tarannum Khatun combines her academic excellence with practical knowledge to address the diverse healthcare needs of women. She has successfully handled numerous complex and critical cases, earning her the trust and respect of her patients and peers alike. Alongside her role as a professor, she remains deeply committed to providing personalized consultations and tailored treatment plans.</p>
+              <p> Why Choose Dr. Tarannum Khatun?</p>
+              <p> 1. Recognized as Nepal's leading gynecologist with over two decades of experience.</p>
+              <p> 2. Specializes in treating a wide range of female health concerns, from routine issues to critical conditions.</p>
+              <p> 3. Successfully managed numerous serious cases with remarkable outcomes.</p>
+              <p> 4. A trusted professional known for her warm, patient-centric care.</p>
+            <p>Available Hours: Sunday to Friday: 11:00 AM to 3:00 PM and on Thursday: 11:00 AM to 12:00 PM</p>
+             <p>At Akash Medical Hall, we are honored to have Dr.Tarannum Khatun as part of our team. Her dedication, skill, and compassion ensure that every patient feels supported on their journey to better health and well-being.</p>
+            <!-- Appointment Booking Form -->
+            <h3>Book an Appointment</h3>
+            <form action="" method="POST">
+                <label for="name">नाम / Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">उमेर / Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="phone">फोन नम्बर / Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">ठेगाना / Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="date">पछ्याइएको मिति / Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">पछ्याइएको समय / Preferred Time:</label>
+                <select id="time" name="time" required>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+
+                <label for="message">सन्देश / Message (Optional):</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">बुक गर्नुहोस् / Book Appointment</button>
+            </form>
         </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="pharmacy1.jpg" alt="Pharmacy Counter">
+                <img src="pharmacy2.jpg" alt="Stocked Shelves">
+                <img src="doctor.jpg" alt="Doctor Consulting">
+                <img src="services.jpg" alt="Pharmacy Services">
+            </div>
+        </section>
+
+        <section id="testimonials(Feedback)">
+            <h2>Testimonials(Feedback)</h2>
+            <blockquote>
+                <p>"The staff at Akash Medical Hall always goes the extra mile to assist us. Highly recommend them!"</p>
+                <cite>– A Happy Customer</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Dr. Tarannum Khatun is incredibly professional and compassionate. Best healthcare experience!"</p>
+                <cite>– Satisfied Patient</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Akash Medical Hall has been our go-to pharmacy for years. Great service and reliable medicines."</p>
+                <cite>– Loyal Client</cite>
+            </blockquote>
+             <blockquote> <p>"The team at Akash Medical Hall always goes above and beyond to help. I trust them completely with my healthcare needs." - Loyal Client</p> </blockquote> <blockquote> <p>"Dr. Tarannum Khatun successfully handled my complicated case with such expertise. I am forever grateful for her care." - Grateful Patient</p> </blockquote> <blockquote> <p>"Their range of medications and excellent customer service are unmatched. Highly recommend Akash Medical Hall!" - Regular Visitor</p> </blockquote> <blockquote> <p>"I’ve been coming here for years, and the professionalism and kindness shown by everyone are why I’ll keep coming back." - Long-Time Customer</p> </blockquote>
+      </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
+            <p>Address: Ghantaghar,Link Road, Birgunj, Nepal, 44300</p>
+            <p>Phone: 051-526427</p>
+            <p>Email: alamtauqeer514@gmail.com</p>
+            <p>Whatsapp No.: +977-9821127921</p>
             <form action="submit_form.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -199,5 +290,56 @@
     <footer>
         <p>&copy; 2025 Akash Medical Hall - Nepal. All rights reserved.</p>
     </footer>
+     <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Collect form data
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+        $date = $_POST['date'];
+        $time = $_POST['time'];
+        $message = $_POST['message'];
+
+        // SMS content
+        $sms_content = "New Appointment:\nName: $name\nAge: $age\nPhone: $phone\nAddress: $address\nDate: $date\nTime: $time\nMessage: $message";
+
+        // Fast2SMS API URL
+        $api_url = "https://www.fast2sms.com/dev/bulk";
+
+        // Fast2SMS API Payload
+        $payload = [
+            'sender_id' => 'FSTSMS',
+            'message' => $sms_content,
+            'language' => 'english',
+            'route' => 'p',
+            'numbers' => 'your_mobile_number' // Replace with your mobile number
+        ];
+
+        // Fast2SMS API headers
+        $headers = [
+            'authorization: your_api_key', // Replace with your Fast2SMS API key
+            'Content-Type: application/x-www-form-urlencoded'
+        ];
+
+        // Send SMS via cURL
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $api_url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($payload));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec($ch);
+        $error = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+            echo "<p>Error sending SMS: $error</p>";
+        } else {
+            echo "<p>Appointment details sent to your mobile number!</p>";
+        }
+    }
+    ?>
 </body>
 </html>
